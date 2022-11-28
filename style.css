@@ -1,0 +1,90 @@
+@font-face {
+    font-family: "SFProDisplayReg";
+    src: url('/assets/fonts/SFPRODISPLAYREGULAR.OTF') format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SFProDisplayBold";
+    src: url('/assets/fonts/SFPRODISPLAYBOLD.OTF') format("opentype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SFProDisplaySemiBold";
+    src: url('/assets/fonts/SFPRODISPLAYMEDIUM.OTF') format("opentype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'SFProDisplayReg', 'SFProDisplayBold', 'SFProDisplaySemiBold', serif;
+}
+
+div#hero{
+    width: 1440px;
+    height: 1024px;
+}
+
+nav#nav-header a.is-active{
+    color: #5468E7;
+}
+
+div#who-we-are{
+    width: 1440px;
+    height: 1710px;
+}
+
+div#recent-works{
+    width: 1440px;
+    height: 1348px;
+}
+
+div#by-the-numbers{
+    width: 1440px;
+    height: 2090px;
+}
+
+div#job{
+    width: 1440px;
+    height: 1328px;
+}
+
+div#footer{
+    width: 1440px;
+    height: 1515px;
+}
+
+img.is-disabled{
+    display: none;
+}
+
+.job-card{
+    transition: 0.1s;
+}
+
+div.card-img{
+    opacity: 0;
+}
+
+div.job-card:hover{
+    opacity: 1;
+    cursor: pointer;
+    background-color: #232340;
+    color: white;
+}
+
+div.job-card:hover .card-img{
+    opacity: 1;
+}
+
+@media only screen and (max-width: 375px) {
+    nav#nav-header{
+        max-width: 275px;
+    }
+}
